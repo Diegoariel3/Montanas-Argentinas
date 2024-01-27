@@ -1,0 +1,50 @@
+@media (width <= 500px) {
+    header {
+        display: flex;
+        justify-content: center;
+        img {
+            height: 100vh;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+    .header_title h2 {
+        top: 300px;
+        span {
+            color: #383a39;
+        }
+    }
+    .main_contain {
+        flex-direction: column;
+        h1 {
+            font-size: $xxl;
+        }   
+    }
+    .template_area_footer {
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+        grid-template-areas: 
+        "logo redes"
+        "links_4 links_4"
+        "copi copi ";
+    }
+    .links_1,.links_2,.links_3 {
+        display: none;
+    }
+    .container {
+        width: 70%;
+    }
+}
+@media (width > 450px) {
+    .ww-50 {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 20px;
+    }  
+}
+@media (width < 860px) {
+    .back_ground img {
+        height:100vh;
+        width: auto;
+    }
+}

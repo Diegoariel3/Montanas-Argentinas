@@ -1,0 +1,176 @@
+.primary_nav {
+    img {
+        height: 40px;
+    }
+    a {
+        font-size: $lg;
+    }
+}
+header {
+    width: 100%;
+    h2{
+        color: $primaryColor;
+        font-size: $xxl;
+        font-weight: $xbold;
+        text-align: center;
+    }
+    img {
+        width: 100%;
+    }
+}
+.header_title {
+    background-image: url(../img/portada.webp);
+    background-position: right top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    @include flex(row,center,center);
+    h2 {
+        color: $white;
+        text-transform: uppercase;
+        margin-bottom: 100px;
+    }
+}
+.navbar-toggler {
+    border: none;
+}
+.secondary_nav {
+    @include flex(row,space-around,center);
+    height: 100px;
+    width: 100%;
+    background-color: $primaryColor;
+    margin-top: -3px;    /*Solucion temporaria*/  
+    img {
+        height: 50px;
+        filter: invert(1);
+        &:hover {
+            filter: none;
+        }
+    }
+}
+.main_contain {
+    @include flex(row-reverse,space-around,center);
+    width: 100%;
+    h1 {
+        color: $primaryColor;
+        font-size: $xxl;
+        text-align: center;
+        margin: 20px;
+    }
+    p {
+        color: $gray;
+        font-size: $md;
+        text-align: center;
+        line-height: $xl;
+        margin: 30px 20px;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+.main_contain_image {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "montaña1 montaña3 montaña5 montaña5"
+    "montaña1 montaña4 montaña6 montaña7"
+    "montaña2 montaña4 montaña8 montaña8";
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+        filter: grayscale(1);
+        &:hover {
+        filter: none;
+       }
+    }
+}
+.montaña1 {
+    grid-area: montaña1;
+}
+.montaña2 {
+    grid-area: montaña2;
+}
+.montaña3 {
+    grid-area: montaña3;
+}
+.montaña4 {
+    grid-area: montaña4;
+}
+.montaña5 {
+    grid-area: montaña5;
+}
+.montaña6 {
+    grid-area: montaña6;
+}
+.montaña7 {
+    grid-area: montaña7;
+}
+.montaña8 {
+    grid-area: montaña8;
+}
+//starts page places
+.row {
+    article {
+        margin-bottom: 10px;
+    }
+}
+.nb-bg {
+    background-color: $primaryColor;
+}
+.title-places {
+    color: $primaryColor;
+    text-align: center;
+    font-weight: $bold;
+    text-transform: uppercase;
+    margin: 30px;
+}
+.bg-custom {
+    background-color: $primaryColor; 
+    color: $secondaryColor;
+    &:hover {
+        background-color: $secondaryColor;
+        border: 1px solid $primaryColor;
+        color: $primaryColor;
+    }
+}
+//ends page places
+//starts section accommodation
+.color {
+    background-color: $white;
+}
+input[type="checkbox"].color:checked {
+    background-color: $primaryColor; 
+    border-color: rgb(40, 61, 145); 
+}
+.strong {
+    font-weight: $bold;
+}
+//ends section accommodation
+//starts section contact
+.form-floating {
+    margin: 10px auto;
+}
+.form-signin {
+    max-width: 330px;
+    padding: $md;
+}
+.bg-input {
+    background-image: url(../img/aterdecerruta.webp);
+    background-size: cover;
+    padding: 10px;
+} 
+.bg-form {
+    background: transparent;
+    backdrop-filter: blur(14px);
+}
+//ends section contact

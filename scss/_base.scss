@@ -1,0 +1,29 @@
+//Vars
+//Fonts
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&display=swap');
+$mainFont:  'Playfair Display', serif;
+//weight
+$regular: 400;
+$bold: 700;
+$xbold: 900;
+//Colors
+$primaryColor: rgb(103, 114, 157);
+$secondaryColor: rgb(254, 217, 237);
+$gray: gray;
+$white: rgb(253, 253, 253);
+//Sizies
+$sm: 0.8em;
+$md: 1em;
+$lg: 1.6em;
+$xl: 2em;
+$xxl: 3em;
+
+
+* {
+    font-family: $mainFont;
+}
+p {
+    color: $gray;
+    line-height: $lg;
+    font-size: $md;
+}

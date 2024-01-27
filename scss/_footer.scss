@@ -1,0 +1,54 @@
+footer {
+    ul {
+        list-style: none;
+    }
+    a {
+        text-decoration: none;
+        color: $secondaryColor;
+        &:hover {
+            color: map-get($map: $paleta, $key: 'uno');
+        }
+    }
+}
+.template_area_footer {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    background-color: $primaryColor;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 80px auto 40px;
+    grid-template-areas: 
+    "logo redes redes redes"
+    "links_1 links_2 links_3 links_4"
+    "copi copi copi copi ";
+}
+.logo_footer {
+    grid-area: logo;
+    img {
+        height: 50px;
+    }
+}
+.redes {
+    grid-area: redes;
+    a {
+        margin: 10px; 
+        color: $secondaryColor;
+    }
+}
+.links_1 {
+    grid-area: links_1;
+}
+.links_2 {
+    grid-area: links_2;
+}
+.links_3 {
+    grid-area: links_3;
+}
+.links_4 {
+    grid-area: links_4;
+}
+.copyright {
+    color: rgb(254, 217, 237);
+    grid-area: copi;
+}
+   

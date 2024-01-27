@@ -1,0 +1,18 @@
+@mixin flex ($dire,$justy,$align){
+    display: flex;
+    flex-direction: $dire;
+    justify-content: $justy;
+    align-items: $align;
+}
+
+//maps
+$paleta:(
+    'uno': #4B3869,
+    'dos': #664E88,
+    'tres': #706897,
+    'cuatro': #A06EE1,
+    'cinco': #CBBCF6,
+);
+.bg-violet {
+    background-color: map-get($map: $paleta, $key: 'uno');
+}
