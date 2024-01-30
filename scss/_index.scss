@@ -25,11 +25,11 @@ header {
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
-    @include flex(row,center,center);
+    display: flex;
+    justify-content: center;
     h2 {
         color: $white;
         text-transform: uppercase;
-        margin-bottom: 100px;
     }
 }
 .navbar-toggler {

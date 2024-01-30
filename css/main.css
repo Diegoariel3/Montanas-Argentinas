@@ -35,14 +35,14 @@ p {
   }
   100% {
     opacity: 0;
-    scale: 3;
-    color: black;
+    transform: scale(2);
+    padding-top: 650px;
   }
 }
 .header_title h2 {
-  padding-top: 200px;
+  padding-top: 400px;
   animation: desaparecer linear both;
-  animation-timeline: scroll(root);
+  animation-timeline: scroll();
   animation-range: 0 400px;
 }
 
@@ -78,14 +78,11 @@ header img {
   background-attachment: fixed;
   height: 100vh;
   display: flex;
-  flex-direction: row;
   justify-content: center;
-  align-items: center;
 }
 .header_title h2 {
   color: rgb(253, 253, 253);
   text-transform: uppercase;
-  margin-bottom: 100px;
 }
 
 .navbar-toggler {
