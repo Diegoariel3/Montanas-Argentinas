@@ -1,12 +1,13 @@
 {
-  "name": "coder",
+  "name": "montanas-argentinas",
   "version": "1.0.0",
-  "description": "",
+  "description": "Gu\u00eda informativa de turismo de monta\u00f1a en Argentina",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "sass": "sass",
-		"sass:watch": "sass --watch scss/main.scss  css/main.css"
+    "sass:build": "sass scss/main.scss css/main.css --no-source-map",
+    "sass:watch": "sass --watch scss/main.scss css/main.css",
+    "start": "python -m http.server 4173 --bind 127.0.0.1"
   },
   "author": "",
   "license": "ISC",

@@ -1,28 +1,36 @@
-Montañas de Argentina: Página de Inicio
+# Montañas Argentinas
 
-Este es el archivo README para la página de inicio del sitio web "Montañas de Argentina". El sitio está creado con HTML, CSS y JavaScript, y utiliza Bootstrap y AOS (Animate On Scroll) para su funcionalidad y animaciones.
+Guía informativa de turismo de montaña. Proyecto de práctica actualizado con HTML, Sass/CSS y JavaScript sin framework.
 
-Estructura de la página
-La página de inicio consta de las siguientes secciones:
+## Abrir en VS Code
 
-Navegación: Una barra de navegación fija en la parte superior de la página con enlaces a las diferentes secciones del sitio.
-Presentación: Un encabezado con una imagen de fondo y un título que invita a los visitantes a descubrir las montañas de Argentina.
-Navegación secundaria: Un menú con enlaces a diferentes categorías de contenido.
-Introducción: Una sección con texto e imágenes que presentan las montañas de Argentina y sus atractivos turísticos.
-Pie de página: Un pie de página con enlaces a redes sociales, información de contacto y copyright.
-Uso
-El sitio está diseñado para ser visualizado en navegadores web modernos y está optimizado para dispositivos móviles y de escritorio.
+En VS Code, elegí **Archivo → Abrir carpeta** y seleccioná esta carpeta `Montanas-Argentinas`.
 
-Para ver el sitio en acción, descarga o clona este repositorio y abre el archivo index.html en tu navegador web preferido.
+Abrí `index.html` en tu navegador o usá la extensión Live Server. No hace falta instalar dependencias para navegar el sitio.
 
-Contribución
-Si deseas contribuir al desarrollo de este sitio web, por favor haz un fork de este repositorio y envía una pull request con tus cambios. Asegúrate de seguir las convenciones de código y estilo establecidas en este repositorio.
+Si tenés Python instalado, `npm start` sirve la web en http://127.0.0.1:4173.
 
-Licencia
-Este proyecto está licenciado bajo la Licencia MIT - ver el archivo LICENSE para más detalles.
+## Editar
 
-Contacto
-Si tienes alguna pregunta o comentario sobre este proyecto, por favor contáctame en misitio@example.com.
+- `index.html`: portada.
+- `pages/lugares.html`: destinos y fichas.
+- `pages/actividades.html`: experiencias.
+- `pages/alojamiento.html`: orientación para elegir alojamiento.
+- `pages/contacto.html`: guía de viaje (conserva la URL original).
+- `scss/main.scss`: estilos de la versión actual; los parciales anteriores se conservan como referencia y ya no se importan.
+- `css/main.css`: estilos compilados que carga el navegador.
+- `js/main.js`: navegación móvil, búsqueda y lista de preparación.
 
+Para trabajar con Sass: `npm install`, luego `npm run sass:watch`. Para generar el CSS una vez: `npm run sass:build`.
 
+## Funciones
 
+Búsqueda sin distinguir tildes, filtros por región, fichas desplegables, menú móvil accesible y lista de preparación guardada en este navegador. Sin JavaScript, los destinos y el contenido siguen disponibles.
+
+Las tipografías de Google Fonts son opcionales: hay fuentes locales de respaldo. Las imágenes se conservan del repositorio original; falta documentar sus autores y licencias individuales antes de una publicación definitiva. No se agregaron fotografías externas.
+
+Las tarifas, aperturas y permisos se consultan mediante los enlaces oficiales de cada ficha. Esta web no vende excursiones, no procesa reservas y no recoge datos personales. El antiguo formulario de contacto no tenía un servicio de envío y se reemplazó por la guía informativa.
+
+## Subir la actualización a GitHub
+
+En **Control de código fuente** de VS Code, revisá los cambios, escribí un mensaje, confirmalos y elegí **Sincronizar cambios**. La copia local conserva el remoto original. Esta actualización no se subió ni modificó la web pública.
